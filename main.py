@@ -3,10 +3,6 @@ import os
 import json
 from oauth2client.service_account import ServiceAccountCredentials
 
-def read_secret_json_file(file_path):
-    with open(file_path, 'r') as file:
-        return json.load(file)
-
 # Get the secret file path from the environment variable
 secret_file_path = os.environ.get('SECRET_FILE')
 sheet = os.environ.get('SHEET')
