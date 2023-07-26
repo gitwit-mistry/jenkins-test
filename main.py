@@ -9,6 +9,9 @@ def read_secret_json_file(file_path):
 
 # Get the secret file path from the environment variable
 secret_file_path = os.environ.get('SECRET_FILE')
+sheet = os.environ.get('SHEET')
+date = os.environ.get('DATE')
+print(sheet,date)
 
 def read_google_sheet():
     # Replace 'YOUR_SERVICE_ACCOUNT_KEY.json' with the path to your service account JSON file
